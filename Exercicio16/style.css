@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(241, 145, 55);
+    font: normal 12pt Arial;
+}
+header{
+    text-align: center;
+}
+h1 {
+    color: black;
+}
+p{
+    color:blueviolet;
+}
