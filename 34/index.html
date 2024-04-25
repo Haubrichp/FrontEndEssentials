@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela com Células Mescladas</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<h2>Tabela com Células Mescladas</h2>
+
+<table>
+  <tr>
+    <th>Mês</th>
+    <th colspan="2">Vendas</th>
+  </tr>
+  <tr>
+    <td rowspan="2">Janeiro</td>
+    <td>Teclado</td>
+    <td>$4.000</td>
+  </tr>
+  <tr>
+    <td>Guitarra</td>
+    <td>$1.700</td>
+  </tr>
+  <tr>
+    <td>Fevereiro</td>
+    <td colspan="2">$2.000</td>
+  </tr>
+</table>
+
+</body>
+</html>
