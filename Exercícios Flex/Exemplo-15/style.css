@@ -1,0 +1,93 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+ 
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .primeiro{
+    
+    justify-content: flex-start;
+    height: 100%;
+    width: 34%;
+    background-color: aquamarine;
+  }
+
+  .segundo{
+    
+    justify-content: flex-end;
+    height: 100%;
+    width: 64%;
+    background-color:blue
+  }
+  .container {
+    height: 20%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+   
+    margin:1%;
+  }
+
+  .top-border {
+    justify-content: flex-end;
+    align-self: flex-end;
+    background-color: black;
+    height: 15%;
+    width: 98%;
+    margin: 1%;
+  }
+
+  .flex-container {
+    display: flex;
+    height: 30%;
+    margin: 1%;
+    justify-content: center;
+    background-color: #af2038;
+  }
+  
+
+  .ultima-barra{
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+  }
+
+  .barra-cinza {
+    height: 90%;
+    width: 30%;
+    justify-content: flex-start;
+    align-self: flex-start;
+    background-color: rgb(44, 19, 146);
+    margin: 1%;
+  }
+  
+.barra-lateral {
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 31%;
+    height: 90%;
+    background-color: #2073af;
+    margin: 1%;
+  }
+  
+.conteudo {
+    width: 31%;
+    height: 90%;
+    justify-content: flex-start;
+    align-self: flex-start;
+    background-color: #137373;
+    margin: 1%;
+  }
+  .barra-cinza1 {
+    height: 90%;
+    width: 31%;
+    justify-content: start;
+    align-self: flex-start;
+    background-color: gray;
+    margin: 1%;
+  }

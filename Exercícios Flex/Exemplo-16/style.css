@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+ .all-in{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+ 
+ }
+
+ .barra-top{
+    justify-content:center;
+    width: 98%;
+    height: 25%;
+    background-color: #1f1d1d;
+    margin:1%;
+ }
+
+ .container{
+    justify-content: center;
+    width:80%;
+    height:50%;
+    background-color: red;
+ }
+
+ .bottom{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 80%;
+    margin:1%;
+   
+ }
+
+ .first{
+    width:30%;
+    height: 90%;
+    background-color: #2e116d;
+    margin:1%;
+ }
+ .second{
+    width:30%;
+    height: 90%;
+    background-color: #3f10a5;
+    margin:1%;
+ }
+ .third{
+    width:30%;
+    height: 90%;
+    background-color: #510bea;
+    margin:1%;
+ }
