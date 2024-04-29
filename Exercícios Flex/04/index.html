@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <style>
+        body {
+            
+            margin: 0;
+            height: 100vh;
+             
+        }
+        .pagina {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+        .linha-vermelha, .linha-azul {
+            width: calc(100% - 14px); 
+            height: 120px; 
+            gap: 10px;
+            margin-top: 7px; 
+            margin-bottom: 7px; 
+        }
+        .linha-vermelha {
+            height: 130px;
+            background-color: rgb(238, 114, 114);
+        }
+        .linha-azul {
+            height: 100px;
+            background-color: aquamarine;
+           
+           
+        }
+        .centro-pagina {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            width: 100%; 
+           
+        }
+        .quadrado-azul {
+            width: 420px;
+            height: 420px; 
+            background-color: aquamarine;
+            margin: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagina">
+        <div class="linha-vermelha"></div>
+        <div class="centro-pagina">
+            <div class="quadrado-azul"></div>
+            <div class="quadrado-azul"></div>
+            <div class="quadrado-azul"></div>
+        </div>
+        <div class="linha-azul"></div>
+    </div>
+</body>
+</html>

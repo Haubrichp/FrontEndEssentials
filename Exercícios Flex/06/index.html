@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .pagina {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 7px;
+        }
+        .linha-cinza {
+            width: 100%;
+            height: 40px; 
+            background-color: rgb(169, 169, 169);
+            margin-bottom: 7px;
+            margin-right: 26px;
+        }
+        .linha-vermelha {
+            width: 100%;
+            height: 250px; 
+            background-color: red;
+            margin-bottom: 7px;
+            margin-right: 26px;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            
+        }
+        .quadrado-acquamarine {
+            width: 33.33%; 
+            height: 340px; 
+            background-color: aquamarine;
+            margin-right: 14px;
+        }
+        .quadrado-cinza {
+            width: 33.33%; 
+            height: 340px; 
+            background-color: rgb(169, 169, 169);
+            margin-right: 12px;
+        }
+        .quadrado-acquamarine-complemento {
+            flex-grow: 1; 
+            height: 340px; 
+            background-color: aquamarine;
+            
+        }
+    </style>
+</head>
+<body>
+<div class="pagina">
+    <div class="linha-cinza"></div>
+    <div class="linha-vermelha"></div>
+    <div class="container">
+        <div class="quadrado-acquamarine"></div>
+        <div class="quadrado-cinza"></div>
+        <div class="quadrado-acquamarine"></div>
+    </div>
+</div>
+</body>
+</html>

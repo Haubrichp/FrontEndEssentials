@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .pagina {
+            max-width: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .linha-cinza {
+            width: calc(100% - 26px); 
+            height: 140px;
+            background-color: rgb(169, 169, 169);
+            margin-top: 5px;
+            
+        }
+        .quadrado {
+            display: flex;
+            gap: 2px;
+            flex-wrap: wrap;
+            width: calc(100% - 26px); 
+            height: calc(100vh - 147px);
+            margin: 2px; 
+        }
+        .quadrado > div {
+            flex: 1 0 calc(50% - 5px);
+            height: calc(50% - 5px); 
+        }
+        .vermelho {
+            background-color: rgb(238, 114, 114);
+        }
+        .azul {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<div class="pagina">
+    <div class="linha-cinza"></div>
+    <div class="quadrado">
+        <div class="vermelho"></div>
+        <div class="azul"></div>
+        <div class="azul"></div>
+        <div class="vermelho"></div>
+    </div>
+</div>
+</body>
+</html>
