@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+div{
+    display: flex;
+    flex: 10px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    gap: 15px;
+    margin: 10px;
+    width: auto;
+    max-height: calc(100vh - 50px);
+    min-height: 0px;
+    
+
+ }
+.elemento{
+    background-color: aqua;
+    width: 5px;
+    align-self: flex-end;
+    order: 2;
+    height: 60px;
+}
+section{
+    flex: 1; 
+    max-width: 30%;
+   background-color:aqua ;
+   height: 180%;
+}
+
+article{
+    flex: 1;
+    background-color: red;
+    height: 180%;
+    max-height: 180%;
+}
