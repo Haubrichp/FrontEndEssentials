@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    height: 8%;
+    background-color: aqua;
+    margin: 2px;
+    margin-top: 20px;
+}
+div{
+    display: flex;
+    flex: 10px;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    gap: 15px;
+    margin: 10px;
+    width: auto;
+    max-height: calc(100vh - 50px);
+    min-height: 0px;
+    
+}
+ .elemento1{
+    background-color:aqua;
+    height: 80%;  
+    max-width: 80%;
+    
+    
+ }
+ .elemento2{
+    background-color: red;
+    height: 80%;
+    max-width: 30%;
+    
+ }
+
+section{
+    flex: 1; 
+    max-width: 30%;
+   background-color:aqua ;
+}
+
+article{
+    flex: 1;
+    background-color: red;
+}
