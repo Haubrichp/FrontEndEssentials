@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+  }
+  header {
+    width: 1259px;
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+    gap: 12px;
+  }
+  div {
+  display: inline-block;
+  margin: 10px;
+  gap: 10px;
+  width: 100px;
+  height: 100px;
+  flex-direction: row-reverse;
+
+}
+#conteiner-a{
+    margin: 5px;
+    width: 1000px;
+    height: 250px;
+    background-color: grey;
+    
+}
+#conteiner-b{
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+    background-color: red   ;
+}
+#conteiner-c{
+    margin: 5px;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}
+#conteiner-d{
+    margin: 5px;
+    width: 1000px;
+    height: 250px;
+    background-color: aqua;
+}   

@@ -1,0 +1,60 @@
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    height: 200px;
+    background-color: aqua;
+    margin: 10px;
+  }
+  section{
+      background-color: gray;
+      margin: 10px;
+      height: 350px;
+      width: 500px; 
+  }
+  .section2{
+    background-color: aqua;
+    margin: 10px;
+    height: 350px;
+    width: 500px;
+  }
+  
+  aside{
+    display: flex;
+    margin: 10px;
+    background-color: crimson;
+    height: 710px;
+    width: 810px;
+    
+  }
+
+    #section3{
+      background-color: gray;
+      margin: 10px;
+      height: 250px;
+      width: 500px; 
+  }
+  .section4{
+    background-color: aqua;
+    margin: 10px;
+    height: 350px;
+    width: 500px;
+  }
+  
+    
+  #div1 {
+    display: flex;
+    height: 600px;
+    width: 80%;
+  }
+  #div2 {
+    flex-direction: column;
+  }
+  #div3 {
+    flex-direction: column;
+  }
+  #div4 {
+    flex-direction: column;
+  }
