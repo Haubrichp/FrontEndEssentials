@@ -1,0 +1,26 @@
+/* Estilo para manter os elementos em linha */
+.category-slider__card-item-wrap {
+    display: inline-block;
+    margin-right: 50px; /* Adicione margem direita para separar os elementos */
+}
+
+/* Estilo para ocultar as barras de rolagem horizontal e vertical */
+.scrollbar-horizontal__track,
+.scrollbar-vertical__track {
+    display: none;
+}
+/* CSS para centralizar a imagem e alinhar o nome corretamente */
+.category-slider__card-item-wrap {
+    text-align: center; /* Centraliza a imagem */
+}
+
+.category-slider__card-img-wrap {
+   
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    justify-content: center; /* Alinha horizontalmente o conteúdo */
+}
+
+.category-slider__card-title-wrap {
+    text-align: center; /* Centraliza o título */
+}

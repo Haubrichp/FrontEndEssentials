@@ -198,25 +198,31 @@ body {
     text-decoration: none;
 }
 .carousel {
-    width: 70%;
+    display: flex;
+    width: 100%; /* Ajuste a largura conforme necessário */
     overflow: hidden;
-    margin: 20px auto;
+    margin: 10px auto;
     position: relative;
-    text-align: center;
-    z-index: 0;
+    text-align: left; /* Alinha o conteúdo do carrossel à esquerda */
 }
 
 .slide {
     display: none;
+    height: 330px; /* Defina uma altura fixa para os slides */
+    width: 1290px;
 }
 
 .slide img {
-    width: 70%;
-    height: auto;
+    width: 100%;
+    height: 100%; /* Faça as imagens preencherem a altura do slide */
+    object-fit: cover; /* Garante que as imagens sejam dimensionadas e cortadas para preencher o slide */
 }
+
 .active {
     display: block;
 }
+
+
 
 .arrow {
     display: none;
@@ -244,45 +250,6 @@ body {
 .arrow-right {
     right: 100px;
 }
-
-/* Outros estilos CSS */
-
-.opcoes-encarte {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.opcoes-encarte h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.opcoes-encarte ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; 
-    text-align: center; 
-}
-
-.opcoes-encarte li {
-    display: inline-block; 
-    margin: 0 20px; /* Ajuste a margem conforme desejado */
-}
-
-.opcoes-encarte a {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.opcoes-encarte a:hover {
-    background-color: #555;
-}
-
 
 main button {
     background-color: #333;
