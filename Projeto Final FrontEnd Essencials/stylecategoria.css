@@ -5,12 +5,6 @@
    
 }
 
-/* Estilo para ocultar as barras de rolagem horizontal e vertical */
-.scrollbar-horizontal__track,
-.scrollbar-vertical__track {
-    display: none;
-    
-}
 /* CSS para centralizar a imagem e alinhar o nome corretamente */
 .category-slider__card-item-wrap {
     text-align: center; /* Centraliza a imagem */

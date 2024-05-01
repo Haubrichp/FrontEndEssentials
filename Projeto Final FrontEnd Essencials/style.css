@@ -202,7 +202,8 @@ body {
 }
 .carousel {
     display: flex;
-    width: 100%; /* Ajuste a largura conforme necessário */
+    height: 330px;
+    width: 1280px; /* Ajuste a largura conforme necessário */
     overflow: hidden;
     margin: 10px auto;
     position: relative;
@@ -211,8 +212,8 @@ body {
 
 .slide {
     display: none;
-    height: 330px; /* Defina uma altura fixa para os slides */
-    width: 1290px;
+    height: auto;
+    width: auto;
 }
 
 .slide img {
@@ -232,7 +233,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
+    width: 1px;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -247,11 +248,11 @@ body {
 }
 
 .arrow-left {
-    left: 100px;
+    left: 40px;
 }
 
 .arrow-right {
-    right: 100px;
+    right: 40px;
 }
 
 main button {
