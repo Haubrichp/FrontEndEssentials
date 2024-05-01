@@ -217,7 +217,7 @@ body {
 }
 
 .slide img {
-    width: 100%;
+    width: 225%;
     height: 100%; /* Faça as imagens preencherem a altura do slide */
     object-fit: cover; /* Garante que as imagens sejam dimensionadas e cortadas para preencher o slide */
 }
