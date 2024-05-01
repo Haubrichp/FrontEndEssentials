@@ -1,50 +1,14 @@
 
-
 .conteudo {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.conteudo h2{
-    flex-direction: column;
-    justify-content: center;
-}
-
-.conteudo .titulo{
-    justify-content: center;
-    background-color: aquamarine;
-    align-items: flex-start;
-    width: 300px;
-}
-/* .conteudo {
     padding: 1em;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
-main h2 {
+.coluna1{
     display: flex;
     flex-direction: column;
-    font-size: 2em;
-    margin-bottom: 10px;
 }
-
-main ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-main li {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-} */
 
 footer {
     background-color: #333;

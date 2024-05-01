@@ -2,12 +2,14 @@
 .category-slider__card-item-wrap {
     display: inline-block;
     margin-right: 50px; /* Adicione margem direita para separar os elementos */
+   
 }
 
 /* Estilo para ocultar as barras de rolagem horizontal e vertical */
 .scrollbar-horizontal__track,
 .scrollbar-vertical__track {
     display: none;
+    
 }
 /* CSS para centralizar a imagem e alinhar o nome corretamente */
 .category-slider__card-item-wrap {
@@ -23,4 +25,12 @@
 
 .category-slider__card-title-wrap {
     text-align: center; /* Centraliza o título */
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.category-slider__card-title-wrap:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+   
+
 }
