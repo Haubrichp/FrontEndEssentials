@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const carouselContainer = document.querySelector('.carousel-container');
-    const carousel = document.querySelector('.carousel');
     const slides = document.querySelectorAll('.slide');
+    const carousel = document.querySelector('.carousel');
     const arrowLeft = document.querySelector('.arrow-left');
     const arrowRight = document.querySelector('.arrow-right');
     let currentSlide = 0;
-    let isPaused = false;
-    let pauseTimeout;
+    let intervalId; // Variável para armazenar o ID do intervalo
 
     function showSlide(n) {
         slides[currentSlide].classList.remove('active');
@@ -22,52 +20,44 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide(currentSlide - 1);
     }
 
-    function pauseSlideShow() {
-        if (!isPaused) {
-            isPaused = true;
-            clearTimeout(pauseTimeout);
-        } else {
-            isPaused = false;
-            autoAdvance();
-        }
+    // Avança para o próximo slide a cada 4 segundos
+    function startInterval() {
+        intervalId = setInterval(nextSlide, 4000);
     }
 
-    function autoAdvance() {
-        if (!isPaused) {
-            pauseTimeout = setTimeout(function () {
-                nextSlide();
-                autoAdvance();
-            }, 3000);
-        }
+    // Para o intervalo de mudança automática de slides
+    function stopInterval() {
+        clearInterval(intervalId);
     }
 
-    // Event listeners para controlar o carrossel com as setas do teclado quando o mouse está sobre o carrossel
-    carouselContainer.addEventListener('mouseenter', function () {
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'ArrowLeft') {
-                prevSlide();
-            } else if (event.key === 'ArrowRight') {
-                nextSlide();
-            }
-        });
+    // Mostra as setas quando o mouse entra no carrossel
+    function showArrows() {
+        arrowLeft.style.display = 'block';
+        arrowRight.style.display = 'block';
+    }
+
+    // Esconde as setas quando o mouse sai do carrossel
+    function hideArrows() {
+        arrowLeft.style.display = 'none';
+        arrowRight.style.display = 'none';
+    }
+
+    // Inicia o intervalo quando o mouse entra no carrossel
+    carousel.addEventListener('mouseenter', function() {
+        stopInterval();
+        showArrows();
     });
 
-    // Avança para o próximo slide a cada 3 segundos
-    autoAdvance();
+    // Para o intervalo quando o mouse sai do carrossel
+    carousel.addEventListener('mouseleave', function() {
+        startInterval();
+        hideArrows();
+    });
 
     // Event listeners para as setas
     arrowLeft.addEventListener('click', prevSlide);
     arrowRight.addEventListener('click', nextSlide);
 
-    // Torna as setas visíveis quando o mouse está sobre o carrossel
-    carouselContainer.addEventListener('mouseenter', function() {
-        arrowLeft.style.display = 'block';
-        arrowRight.style.display = 'block';
-    });
-
-    // Esconde as setas quando o mouse sai do carrossel
-    carouselContainer.addEventListener('mouseleave', function() {
-        arrowLeft.style.display = 'none';
-        arrowRight.style.display = 'none';
-    });
+    // Inicia o intervalo quando a página é carregada
+    startInterval();
 });
