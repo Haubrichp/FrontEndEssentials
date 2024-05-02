@@ -23,7 +23,7 @@ function searchContent(searchTerm) {
   // Implement your search logic here
   // This is just a placeholder example
   const content = [
-    { title: 'Smartphones', url: 'smartphones.html' },
+    { title: 'Smartphones', url: '../smathphones/smartphones.html' },
     { title: 'Informática', url: 'computing.html' },
     { title: 'Acessórios', url: 'accessories.html' },
     { title: 'Tablets', url: 'desktops.html' },

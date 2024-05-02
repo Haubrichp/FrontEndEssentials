@@ -1,10 +1,14 @@
+.row{
+    height: 400px;
+    width: 100vw;
+}
 .card {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    
 }
-
 .card-title {
     font-size: 1rem; /* Tamanho do título reduzido */
     font-weight: bold;
@@ -13,7 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 300px;
     width: 100%;
 }
 .card-text {
