@@ -11,6 +11,18 @@ body {
     height: 100%;
     width: 100%;
     
+    
+}
+#fundo {
+
+    position: absolute;
+    background-image: url("assets\fundo para site.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: scroll;
+    z-index: -1;
 }
 .navbar{
     display: flex;
