@@ -13,7 +13,7 @@ function enlargeIcon() {
     const icons = document.querySelectorAll('.category-slider__card-img-wrap img');
     icons.forEach(icon => {
         icon.addEventListener('mouseenter', () => {
-            icon.style.transform = 'scale(1.1)'; // Aumenta o tamanho do ícone em 10%
+            icon.style.transform = 'scale(1.3)'; // Aumenta o tamanho do ícone em 10%
             icon.style.transition = 'transform 0.3s ease'; // Adiciona uma transição suave
         });
         icon.addEventListener('mouseleave', () => {
