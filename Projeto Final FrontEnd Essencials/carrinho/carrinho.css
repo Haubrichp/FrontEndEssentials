@@ -1,0 +1,52 @@
+/* Estilos para os cabeçalhos dos produtos em linha */
+.checkbox-header {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: space-between;
+    width: 100vw;
+}
+.produto-header,
+.preco-unitario-header,
+.quantidade-header,
+.preco-total-header {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilos para os itens dos produtos em linha */
+.item-produto {
+    display: flex;
+    align-items: center;
+}
+
+.item-produto div {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilos para os botões de ação em linha */
+.acoes-header button {
+    margin: 0 5px; /* Espaçamento entre os botões */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #333;
+    padding: 1em;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.item-carrinho {
+    border: 1px solid #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.resumocarrinho{
+flex: 1;
+    text-align: center;
+}

@@ -3,7 +3,7 @@ var carrinhoItens = [];
 function adicionarAoCarrinho(produtoId) {
     alert("Produto adicionado ao carrinho");
 
-    console.log('adicionarAoCarrinho foi chamada com', produtoId);
+    console.log('adicionarAoCarrinho foi chamada com', produtoId, valorId);
 
     // Verifique se o item existe antes de tentar analisá-lo
     var carrinho = localStorage.getItem('carrinho');
