@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 7</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #container{
+        height: 100vh;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #um{
+      height: 100px;
+      width: 95%;
+      margin: 10px;
+      background-color: gray; 
+    }
+    #dois{
+      width: 50%;
+      height: 200px;
+      background-color: red;
+      margin-bottom: 5px;       
+    }
+    #tres{
+      width: 50%;
+      height: 200px;
+      margin-bottom: 7px;
+      display: flex;
+      justify-content: space-evenly;   
+    }
+    .tresA{
+      width: 33.33%; 
+      height: 200px; 
+      background-color: gray;
+      margin-right: 14px;
+    }
+    .tresB{
+      width: 33.33%; 
+      height: 200px; 
+      background-color: gray;
+      margin-right: 14px;
+    }
+    .tresC{
+      width: 33.33%; 
+      height: 200px; 
+      background-color: gray;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="um"></div>
+        <div id="dois"></div>
+        <div id="tres">
+            <div class="tresA"></div>
+            <div class="tresB"></div>
+            <div class="tresC"></div>
+        </div>
+    </div>
+</body>
+</html>
