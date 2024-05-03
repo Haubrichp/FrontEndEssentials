@@ -4,6 +4,14 @@
     margin-right: 50px; /* Adicione margem direita para separar os elementos */
    
 }
+.category-slider__menu{
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 /* CSS para centralizar a imagem e alinhar o nome corretamente */
 .category-slider__card-item-wrap {
