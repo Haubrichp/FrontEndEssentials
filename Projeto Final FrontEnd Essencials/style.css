@@ -70,16 +70,16 @@ body {
     width:55px;
 }
 
-.dropdown-menu[data-bs-popper] {
+/* .dropdown-menu[data-bs-popper] {
     margin-top: var(--bs-dropdown-spacer);
     align-items: center;
     border-radius: 20px;
     text-decoration: none;
     padding: 0;
     background-color: #000000;
-    z-index: 1; /* Define um z-index maior */
+    z-index: 1; Define um z-index maior} */
 
-} 
+
 .navdrop {
     background-color: #000000;
     color: #ffffff; 
@@ -218,10 +218,10 @@ body {
     width: 1280px; /* Ajuste a largura conforme necessário */
     overflow: hidden;
     margin: 10px auto;
-    position: relative;
-    text-align: left; /* Alinha o conteúdo do carrossel à esquerda */
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Alinha o conteúdo do carrossel à esquerda */
 }
-
 .slide {
     display: none;
     height: auto;
