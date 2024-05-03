@@ -20,13 +20,13 @@
                 <div><a href="../sobre/sobre.html">Sobre</a></div>
                 <div><a href="../contato/contato.html">Contato</a></div>
             
-                <div class="search">
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                      <script src="../javascript.js"></script>
-                    </form>
-                  </div>
+            <div class="search"><form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                
+              
+            </div>
+        </form>
         <section class="carrinho">
             <button onclick="location.href='../carrinho/carrinho.html'">
            <img src="../assets/carrinho.png" alt="carrinho">
@@ -37,41 +37,16 @@
     </header>
 
     <main>
-        <div class="carrinho-header">
-            <!-- Linha Primária -->
-        </div>
-        <div class="checkbox-header">
-            <label class="stardust-checkbox">
-                <input class="stardust-checkbox__input" type="checkbox" aria-checked="false" aria-disabled="false" tabindex="0" role="checkbox" aria-label="clique aqui para selecionar todos os produtos">
-                <div class="stardust-checkbox__box"></div>
-            </label>
-            <div class="produto-header">Produtos</div>
-            <div class="preco-unitario-header">Preço Unitário</div>
-            <div class="quantidade-header">Quantidade</div>
-            <div class="preco-total-header">Preço Total</div>
-                    <!-- Botões de ação -->
-                    <button>Editar</button>
-                    <button>Excluir</button>
-                </div>
+        <div class="container">
+            <h1>Carrinho de Compras</h1>
+            <div id="itensCarrinho">
+
+            </div>
+            <div id="totalCarrinho">
+                <!-- O total do carrinho será exibido aqui -->
             </div>
         </div>
-        
-    <div class="container">
-        
-        <div id="itensCarrinho">
-
-        </div>
-    </div>
-
-    <div id="resumoCarrinho">
-        <p id="valorTotal">Valor total: <span></span></p>
-        <p id="quantidadeItens">Quantidade de itens: <span></span></p>
-        <button id="botaoFinalizarCompra">Finalizar Compra</button>
-    </div>
-    
-    </section>
-</main>
-
+    </main>
 
     <footer>
         <pre>
@@ -82,36 +57,19 @@
     <script src="localstorage.js"></script>
     <script src="../carrinho.js"></script> <!-- Importa o arquivo JavaScript onde as funções relacionadas ao carrinho estão definidas -->
     <script>
-        window.onload = function(){
+        // Função para inicializar a página de carrinho
+        window.onload = function() {
             var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-            var lista = document.getElementById('itensCarrinho');
+            var lista = document.getElementById('itensCarrinho'); // Corrigindo o ID aqui
                 
             for (var i = 0; i < carrinho.length; i++) {
-                var novoItem = document.createElement('div');
+                var novoItem = document.createElement('div'); // Corrigindo aqui
                 novoItem.textContent = carrinho[i];
                 lista.appendChild(novoItem);
             }
-        }
-
-        var carrinhoItens = [];
-
-        function adicionarAoCarrinho(produtoId) {
-            alert("Produto adicionado ao carrinho");
-
-            console.log('adicionarAoCarrinho foi chamada com', produtoId);
-            
-            var carrinho = localStorage.getItem('carrinho');
-            if (carrinho) {
-                carrinho = JSON.parse(carrinho);
-            } else {
-                carrinho = [];
-            }
-            
-            carrinho.push(produtoId);
-            localStorage.setItem('carrinho', JSON.stringify(carrinho));
-            
-            window.location.href = '../carrinho/carrinho.html';
-        }
-    </script>
+            mostrarItensDoCarrinho(); // Mostra os itens do carrinho
+            mostrarTotalDoCarrinho(); // Mostra o total do carrinho
+        };
+        </script>
 </body>
 </html>
