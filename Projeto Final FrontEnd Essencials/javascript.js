@@ -23,15 +23,14 @@ function searchContent(searchTerm) {
   // Implement your search logic here
   // This is just a placeholder example
   const content = [
-    { title: 'Smartphones', url: '../smathphones/smartphones.html' },
-    { title: 'Informática', url: 'computing.html' },
-    { title: 'Acessórios', url: 'accessories.html' },
-    { title: 'Tablets', url: 'desktops.html' },
-    { title: 'Sobre', url: 'sobre.html' },
-    { title: 'Contato', url: 'contato.html' },
-    { title: 'Inicio', url: 'landingPage.html' },
-    { title: 'Home', url: 'landingPage.html' },
-    { title: 'Carrinho', url: 'carrinho.html' },
+    { title: 'Smartphones celular telefone ', url: '../smathphones/smartphones.html' },
+    { title: 'Informática pc notebook laptop desktop ', url: '../informatica/laptops.html' },
+    { title: 'Acessórios headset mouse fone teclado', url: '../acessorios/acessorios.html' },
+    { title: 'Tablets tablet monitor', url: '../tablets/tablet.html' },
+    { title: 'Sobre empresa', url: '../sobre/sobre.html' },
+    { title: 'Contato fale conosco', url: '../contato/contato.html' },
+    { title: 'Inicio home pagina inicial', url: '../landingPage.html' },
+    { title: 'Carrinho', url: '../carrinho/carrinho.html' },
     
   ];
 

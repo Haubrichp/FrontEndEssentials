@@ -10,6 +10,7 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <title>Bootstrap Example</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
 </head>
 <body>
     <header class="top-border">
@@ -20,12 +21,14 @@
                 <div><a href="../sobre/sobre.html">Sobre</a></div>
                 <div><a href="../contato/contato.html">Contato</a></div>
             
-            <div class="search"><form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                
-              
-            </div>
+                <div class="search">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      <script src="../javascript.js"></script>
+                    </form>
+                  </div>
+            </form>
         </form>
         <section class="carrinho">
             <button onclick="location.href='../carrinho/carrinho.html'">
@@ -94,5 +97,6 @@ Valor: R$1614,90</pre>
     </footer>
     <!-- Script que define a função adicionarAoCarrinho -->
     <script src="../carrinho.js"></script>
+    
 </body>
 </html>
